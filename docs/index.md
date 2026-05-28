@@ -1,66 +1,34 @@
-# API 中转站安装部署
+# 快速开始
 
-这份文档用于记录 API 中转站从本地搭建、文档编写到 Vercel 部署的完整流程。
+使用牛顿 AI 中转站前，先完成账号注册、充值订阅和 API 密钥创建。
 
-## 安装
+## 注册账号
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+1. 访问 [牛顿 AI 中转站](https://newtonrouter.com/)。
+2. 使用邮箱接收验证码并完成注册。
 
-## 配置
+## 充值和订阅
 
-=== "macOS"
+1. 进入 **控制台**。
+2. 点击左侧 **钱包**。
+3. 输入任意金额充值，或选择订阅套餐。
 
-    创建文档项目目录：
+!!! tip "试用套餐"
+    现在有 0.01 元购买 2 元额度的试用套餐，每人限购 1 份。
 
-    ```bash
-    mkdir api-relay-docs
-    cd api-relay-docs
-    ```
+## 创建密钥
 
-    启动本地预览：
+1. 进入 **控制台**。
+2. 点击左侧 **API 密钥**。
 
-    ```bash
-    mkdocs serve -a 127.0.0.1:8001
-    ```
+![API 密钥页面](assets/images/image.png)
 
-=== "Vercel"
+3. 点击右上角 **创建密钥**。
 
-    Vercel 构建配置：
+![创建 API 密钥按钮](assets/images/image1.png)
 
-    ```text
-    Install Command: pip install -r requirements.txt
-    Build Command: mkdocs build
-    Output Directory: site
-    ```
+4. 填入密钥名称。
+5. 选择要使用的分组。
+6. 配置额度后保存。
 
-<div class="steps" markdown>
-
-### 创建项目
-
-先完成 Python 虚拟环境和 MkDocs 依赖安装，确保本地可以运行 `mkdocs` 命令。
-
-```bash
-mkdocs --version
-```
-
-### 编辑文档
-
-所有页面都放在 `docs/` 目录中，左侧导航由 `mkdocs.yml` 的 `nav` 字段控制。
-
-```text
-docs/
-├─ index.md
-├─ setup/
-├─ deploy/
-└─ api/
-```
-
-### 部署上线
-
-把项目推送到 GitHub 后，在 Vercel 导入仓库。Vercel 会读取 `vercel.json` 并自动构建 `site/` 静态目录。
-
-</div>
+![创建 API 密钥表单](assets/images/image2.png)

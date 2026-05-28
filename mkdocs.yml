@@ -77,7 +77,7 @@ extra:
       name: GitHub
 
 nav:
-  - 快速开始: Start.md
+  - 快速开始: index.md
   - CLI 工具配置:
       - Codex 工具配置: CliConfig/CodexConfig.md
       - Claude Code 工具配置: CliConfig/ClaudeCodeConfig.md
