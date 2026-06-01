@@ -79,6 +79,7 @@ extra:
 nav:
   - 快速开始: index.md
   - CLI 工具配置:
+      - CC Switch 安装配置（推荐）: CliConfig/CCSwitchConfig.md  
       - Codex 工具配置: CliConfig/CodexConfig.md
       - Claude Code 工具配置: CliConfig/ClaudeCodeConfig.md
   - 常见问题:
