@@ -6,6 +6,7 @@ repo_name: GitHub
 
 theme:
   name: material
+  custom_dir: docs/overrides
   language: zh
   logo: assets/images/newton.png
   favicon: assets/images/newton.png
@@ -82,5 +83,6 @@ nav:
       - CC Switch 安装配置（推荐）: CliConfig/CCSwitchConfig.md  
       - Codex 工具配置: CliConfig/CodexConfig.md
       - Claude Code 工具配置: CliConfig/ClaudeCodeConfig.md
+  - Gpt-image-2使用说明: Gpt-image-2.md
   - 常见问题:
       - Claude Code 常见问题: QA/ClaudeCodeQA.md

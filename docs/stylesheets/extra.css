@@ -63,6 +63,25 @@ body {
   font-weight: 500;
 }
 
+.md-header__site-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.55rem;
+  margin-left: auto;
+  padding: 0 .6rem;
+  color: var(--md-default-fg-color);
+  font-size: .72rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--doc-border);
+  border-radius: 6px;
+}
+
+.md-header__site-link:hover {
+  color: var(--md-accent-fg-color);
+  border-color: currentColor;
+}
+
 .md-search__form {
   height: 2rem;
   border: 1px solid var(--doc-border);
