@@ -22,7 +22,7 @@ GitHub：
 
 ![](assets/images/gpt-image-2.png)
 
-+ 在API密钥填入在本站获取的密钥，；
++ 在API密钥填入在本站获取的密钥，[牛顿AI中转站](https://newtonrouter.com)；
 + 使用方式默认第一种，无法生成时可尝试第二种；
 + 分辨率默认1K，分辨率越高生成时间越久；
 + 在图片描述中填写想要生成的图片
