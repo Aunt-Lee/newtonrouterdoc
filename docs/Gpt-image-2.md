@@ -2,7 +2,7 @@
 
 ## <font style="color:rgb(24, 24, 27);background-color:rgb(250, 250, 250);">Curl使用</font>
 ```plain
-curl -m 300 -X POST "https://newtonrouter.com/openai/v1/images/generations" \
+curl -m 300 -X POST "https://image.newtonrouter.com/v1/images/generations" \
   -H "Authorization: Bearer your-api-key" \
   -H "Content-Type: application/json" \
   -d '{"model":"gpt-image-2","prompt":"a cat","size":"1024x1024","quality":"low"}'
@@ -10,11 +10,11 @@ curl -m 300 -X POST "https://newtonrouter.com/openai/v1/images/generations" \
 
 ## <font style="color:rgb(24, 24, 27);background-color:rgb(250, 250, 250);">使用可视化工具</font>
 ### 国内下载地址：
-[夸克网盘分享](https://pan.quark.cn/s/d5919430fb71)
+[夸克网盘分享](https://pan.quark.cn/s/5cd1b78ba3e1)
 
 ###   
 GitHub：
-[https://github.com/Aunt-Lee/newton-image-tool/releases/tag/v1.0.0](https://github.com/Aunt-Lee/newton-image-tool/releases/tag/v1.0.0)
+[https://github.com/Aunt-Lee/newton-image-tool/releases](https://github.com/Aunt-Lee/newton-image-tool/releases)
 
 
 
