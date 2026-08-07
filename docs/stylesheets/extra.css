@@ -261,6 +261,12 @@ body {
   }
 }
 
+@media screen and (max-width: 44.984375em) {
+  .md-header__title {
+    display: none;
+  }
+}
+
 [data-md-color-scheme="slate"] .md-header {
   color: #f4f7fb !important;
   background: rgba(13, 17, 23, .94) !important;

@@ -1,38 +1,38 @@
-# Claude Code 常见问题
+# Claude Code FAQ
 
-## 遇到 `Invalid API Key · Please run /login` 错误？
+## What should I do if I see `Invalid API Key · Please run /login`?
 
-这通常表示 Claude Code 没有检测到环境变量。请检查：
+This usually means Claude Code did not detect the required environment variables. Check that:
 
-- 是否正确设置了 `ANTHROPIC_AUTH_TOKEN` 和 `ANTHROPIC_BASE_URL`。
-- 环境变量值是否正确，令牌通常以 `sk-` 开头。
-- 修改配置后是否已经重启终端。
+- `ANTHROPIC_AUTH_TOKEN` and `ANTHROPIC_BASE_URL` are set correctly.
+- The environment variable values are correct. Tokens usually begin with `sk-`.
+- You restarted the terminal after changing the configuration.
 
-## 为什么显示 `offline` 状态？
+## Why does Claude Code show `offline`?
 
-Claude Code 会通过连接 Google 来判断网络状态。显示 `offline` 通常不影响正常使用，只是表示它无法连接到 Google。
+Claude Code checks its network status by connecting to Google. An `offline` status usually does not affect normal use; it only indicates that Google could not be reached.
 
-## 为什么浏览网页的 Fetch 会失败？
+## Why does web Fetch fail?
 
-Claude Code 在访问网页前需要调用 Claude 服务进行安全检查。你可以检查：
+Claude Code calls the Claude service for a security check before accessing a web page. Check that:
 
-- 是否保持稳定的国际互联网连接。
-- 是否需要使用全局代理。
-- API 转发地址是否可用。
+- Your international internet connection is stable.
+- A global proxy is enabled if required.
+- The API forwarding endpoint is available.
 
-## 连接超时或错误怎么办？
+## What should I do if the connection times out or fails?
 
-请按下面顺序检查：
+Check the following in order:
 
-1. 确认网络连接正常。
-2. 确认 `ANTHROPIC_BASE_URL` 设置为 [https://newtonrouter.com](https://newtonrouter.com)。
-3. 如果使用代理，确认代理配置正确。
-4. 尝试关闭 VPN 或代理后重试。
+1. Confirm that your network connection is working.
+2. Confirm that `ANTHROPIC_BASE_URL` is set to [https://newtonrouter.com](https://newtonrouter.com).
+3. If you use a proxy, verify its configuration.
+4. Try disabling the VPN or proxy, then retry.
 
-## API 报错如何处理？
+## How should I handle API errors?
 
-可能是转发代理不稳定导致的，建议：
+The forwarding proxy may be temporarily unstable. Try the following:
 
-1. 退出 Claude Code，例如按 `Ctrl + C`。
-2. 重新运行 `claude` 命令。
-3. 如果问题持续，稍后再试。
+1. Exit Claude Code, for example by pressing `Ctrl + C`.
+2. Run the `claude` command again.
+3. If the issue continues, wait a moment and retry.

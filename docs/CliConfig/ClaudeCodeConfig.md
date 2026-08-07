@@ -1,30 +1,30 @@
-# Claude Code 工具配置
+# Claude Code Setup
 
-Claude Code 是 Anthropic 官方提供的命令行工具，可以让你直接在终端中使用 Claude AI。
+Claude Code is Anthropic's official command-line tool for using Claude AI directly from a terminal.
 
-## 安装
+## Installation
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-## 配置
+## Configuration
 
 ### Windows
 
-1. 进入用户目录下的 `.claude` 文件夹：
+1. Open the `.claude` folder in your user directory:
 
     ```text
-    C:\Users\你的用户名\.claude
+    C:\Users\your-username\.claude
     ```
 
-    也可以按 `Win + R`，输入：
+    You can also press `Win + R` and enter:
 
     ```text
     %userprofile%\.claude
     ```
 
-2. 找到 `settings.json` 文件，改为以下内容：
+2. Open `settings.json` and replace its contents with:
 
     ```json
     {
@@ -41,23 +41,23 @@ npm install -g @anthropic-ai/claude-code
     ```
 
 !!! tip
-    如果没有看到文件，先开启隐藏文件显示；还是没有的话，可以手动创建。
+    If the file is not visible, enable hidden files. If it still does not exist, create it manually.
 
 ### macOS
 
-1. 打开 Finder，按 `Command + Shift + G`，输入：
+1. Open Finder, press `Command + Shift + G`, and enter:
 
     ```text
     ~/.claude
     ```
 
-    如果目录不存在，在终端执行：
+    If the directory does not exist, run this command in Terminal:
 
     ```bash
     mkdir -p ~/.claude
     ```
 
-2. 找到 `settings.json` 文件，改为以下内容：
+2. Open `settings.json` and replace its contents with:
 
     ```json
     {
@@ -73,12 +73,12 @@ npm install -g @anthropic-ai/claude-code
     }
     ```
 
-## 常用命令
+## Common commands
 
-| 命令 | 说明 |
+| Command | Description |
 | --- | --- |
-| `claude` | 启动交互式会话 |
-| `claude -p "问题"` | 单次问答模式，回答后直接退出 |
-| `claude -c` | 恢复最近一次会话 |
-| `claude --model sonnet` | 指定使用的模型 |
-| `claude mcp` | 管理 MCP 服务器连接 |
+| `claude` | Start an interactive session |
+| `claude -p "question"` | Ask one question and exit after the response |
+| `claude -c` | Resume the most recent session |
+| `claude --model sonnet` | Use a specific model |
+| `claude mcp` | Manage MCP server connections |

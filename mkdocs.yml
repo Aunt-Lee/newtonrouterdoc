@@ -1,5 +1,5 @@
-site_name: 牛顿AI中转站
-site_description: 牛顿AI中转站使用文档
+site_name: Newton AI Router
+site_description: Newton AI Router documentation
 site_url: https://newtonrouterdoc.vercel.app
 
 repo_name: GitHub
@@ -7,7 +7,7 @@ repo_name: GitHub
 theme:
   name: material
   custom_dir: docs/overrides
-  language: zh
+  language: en
   logo: assets/images/newton.png
   favicon: assets/images/newton.png
   font:
@@ -19,20 +19,19 @@ theme:
       accent: teal
       toggle:
         icon: material/weather-night
-        name: 切换到深色模式
+        name: Switch to dark mode
     - scheme: slate
       primary: black
       accent: teal
       toggle:
         icon: material/weather-sunny
-        name: 切换到浅色模式
+        name: Switch to light mode
   features:
     - announce.dismiss
     - content.code.copy
     - content.code.select
     - content.tabs.link
     - navigation.footer
-    - navigation.instant
     - navigation.path
     - navigation.expand
     - navigation.sections
@@ -46,6 +45,29 @@ extra_css:
   - stylesheets/extra.css
 
 plugins:
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: zh
+          name: 简体中文
+          build: true
+          site_name: 牛顿AI中转站
+          site_description: 牛顿AI中转站使用文档
+          nav_translations:
+            Quick Start: 快速开始
+            CLI Tool Setup: CLI 工具配置
+            CC Switch Setup (Recommended): CC Switch 安装配置（推荐）
+            Codex Setup: Codex 工具配置
+            Claude Code Setup: Claude Code 工具配置
+            FAQ: 常见问题
+            Claude Code FAQ: Claude Code 常见问题
   - search:
       lang:
         - zh
@@ -78,11 +100,10 @@ extra:
       name: GitHub
 
 nav:
-  - 快速开始: index.md
-  - CLI 工具配置:
-      - CC Switch 安装配置（推荐）: CliConfig/CCSwitchConfig.md  
-      - Codex 工具配置: CliConfig/CodexConfig.md
-      - Claude Code 工具配置: CliConfig/ClaudeCodeConfig.md
-  - Gpt-image-2使用说明: Gpt-image-2.md
-  - 常见问题:
-      - Claude Code 常见问题: QA/ClaudeCodeQA.md
+  - Quick Start: index.md
+  - CLI Tool Setup:
+      - CC Switch Setup (Recommended): CliConfig/CCSwitchConfig.md
+      - Codex Setup: CliConfig/CodexConfig.md
+      - Claude Code Setup: CliConfig/ClaudeCodeConfig.md
+  - FAQ:
+      - Claude Code FAQ: QA/ClaudeCodeQA.md

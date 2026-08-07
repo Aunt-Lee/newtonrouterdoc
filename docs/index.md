@@ -1,34 +1,34 @@
-# 快速开始
+# Quick Start
 
-使用牛顿 AI 中转站前，先完成账号注册、充值订阅和 API 密钥创建。
+Before using Newton AI Router, create an account, add funds or subscribe to a plan, and create an API key.
 
-## 注册账号
+## Create an account
 
-1. 访问 [牛顿 AI 中转站](https://newtonrouter.com/)。
-2. 使用邮箱接收验证码并完成注册。
+1. Visit [Newton AI Router](https://newtonrouter.com/).
+2. Enter the verification code sent to your email to complete registration.
 
-## 充值和订阅
+## Add funds or subscribe
 
-1. 进入 **控制台**。
-2. 点击左侧 **钱包**。
-3. 输入任意金额充值，或选择订阅套餐。
+1. Open the **Console**.
+2. Select **Wallet** in the sidebar.
+3. Enter an amount to add funds, or choose a subscription plan.
 
-!!! tip "试用套餐"
-    现在有 0.01 元购买 2 元额度的试用套餐，每人限购 1 份。
+!!! tip "Trial plan"
+    A trial plan is currently available: pay CNY 0.01 to receive CNY 2 in credit. Limited to one purchase per person.
 
-## 创建密钥
+## Create an API key
 
-1. 进入 **控制台**。
-2. 点击左侧 **API 密钥**。
+1. Open the **Console**.
+2. Select **API Keys** in the sidebar.
 
-![API 密钥页面](assets/images/image.png)
+![API Keys page](assets/images/image.png)
 
-3. 点击右上角 **创建密钥**。
+3. Select **Create API Key** in the upper-right corner.
 
-![创建 API 密钥按钮](assets/images/image1.png)
+![Create API Key button](assets/images/image1.png)
 
-4. 填入密钥名称。
-5. 选择要使用的分组。
-6. 配置额度后保存。
+4. Enter a name for the key.
+5. Select the group you want to use.
+6. Set the usage limit and save the key.
 
-![创建 API 密钥表单](assets/images/image2.png)
+![Create API Key form](assets/images/image2.png)

@@ -1,24 +1,24 @@
-# Codex 工具配置
+# Codex Setup
 
-Codex 是 OpenAI 官方提供的命令行工具，通过牛顿 AI 中转站可以配置自定义模型服务。
+Codex is OpenAI's official command-line tool. You can connect it to a custom model service through Newton AI Router.
 
-## 安装
+## Installation
 
 ```bash
 npm install -g @openai/codex
 ```
 
-## 配置
+## Configuration
 
 ### Windows
 
-1. 进入用户目录下的 `.codex` 文件夹：
+1. Open the `.codex` folder in your user directory:
 
     ```text
-    C:\Users\你的用户名\.codex
+    C:\Users\your-username\.codex
     ```
 
-2. 找到 `config.toml` 文件，改为以下内容：
+2. Open `config.toml` and replace its contents with:
 
     ```toml
     model_provider = "newtonrouter"
@@ -33,7 +33,7 @@ npm install -g @openai/codex
     requires_openai_auth = true
     ```
 
-3. 找到 `auth.json` 文件，改为以下内容：
+3. Open `auth.json` and replace its contents with:
 
     ```json
     {
@@ -41,20 +41,20 @@ npm install -g @openai/codex
     }
     ```
 
-4. 完全退出 Codex 后重新打开。
+4. Quit Codex completely, then reopen it.
 
 !!! tip
-    如果没有看到文件，先开启隐藏文件显示；还是没有的话，可以手动创建。
+    If the files are not visible, enable hidden files. If they still do not exist, create them manually.
 
 ### macOS
 
-1. 创建 `.codex` 文件夹：
+1. Create the `.codex` folder:
 
     ```bash
     mkdir -p ~/.codex
     ```
 
-2. 创建 `config.toml`：
+2. Create `config.toml`:
 
     ```bash
     cat > ~/.codex/config.toml << 'EOF'
@@ -71,7 +71,7 @@ npm install -g @openai/codex
     EOF
     ```
 
-3. 创建 `auth.json`：
+3. Create `auth.json`:
 
     ```bash
     cat > ~/.codex/auth.json << 'EOF'
@@ -81,7 +81,7 @@ npm install -g @openai/codex
     EOF
     ```
 
-4. 完全退出 Codex 后重新打开。
+4. Quit Codex completely, then reopen it.
 
 !!! tip
-    如果连接不上，检查 `config.toml` 中的 `base_url` 是否填写正确。
+    If Codex cannot connect, verify the `base_url` value in `config.toml`.

@@ -35,7 +35,7 @@
       </div>
     </div>
     <a class="md-header__site-link" href="https://newtonrouter.com" target="_blank" rel="noopener">
-      牛顿AI中转站官网
+      {% if config.theme.language == "zh" %}牛顿AI中转站官网{% else %}Newton AI Router{% endif %}
     </a>
     {% if config.theme.palette %}
       {% if not config.theme.palette is mapping %}
