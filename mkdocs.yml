@@ -107,3 +107,5 @@ nav:
       - Claude Code Setup: CliConfig/ClaudeCodeConfig.md
   - FAQ:
       - Claude Code FAQ: QA/ClaudeCodeQA.md
+  - Blog:
+      - OpenRouter Alternatives 2026: blog/openrouter-alternatives-2026.md
