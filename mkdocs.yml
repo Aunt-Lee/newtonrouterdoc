@@ -68,6 +68,8 @@ plugins:
             Claude Code Setup: Claude Code 工具配置
             FAQ: 常见问题
             Claude Code FAQ: Claude Code 常见问题
+            Blog: 博客
+            OpenRouter Alternatives 2026: OpenRouter 替代品 2026
   - search:
       lang:
         - zh
