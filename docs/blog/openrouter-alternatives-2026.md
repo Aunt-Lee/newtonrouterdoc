@@ -113,7 +113,7 @@ This guide compares 10+ gateways side by side so you can pick on evidence instea
 - [How to Choose the Right OpenRouter Alternative](#how-to-choose-the-right-openrouter-alternative)
 - [Migration & Getting Started: It's a Base URL Swap](#migration--getting-started-its-a-base-url-swap)
 - [Three Stories That Explain the Shift](#three-stories-that-explain-the-shift)
-- [Red Flags to Watch](#red-flags-to-watch-in-any-openrouter-alternative)
+- [Red Flags to Watch](#red-flags-to-watch)
 - [FAQ](#faq)
 - [Conclusion](#conclusion-pick-on-evidence-migrate-in-minutes)
 
@@ -284,7 +284,7 @@ resp = client.chat.completions.create(
 
 For AI coding tools, it is environment variables. Point [Cursor](https://newtonrouter.com/blog/point-cursor-at-unified-api) or Claude Code at the new base URL and key, and every model, every tool call, every agent run flows through the gateway with zero code changes. **n8n**, **Dify**, **LangChain**, and **Cline** follow the same pattern: set the base URL, set the key, done.
 
-Grab your credential from the dashboard: sign up and create an API key — creating the key costs nothing. Credit is a separate step: your first top-up of $1 puts $5 of credit in your account. Then point any client at the gateway with that key. The code change is still just a base-URL swap.
+Grab your credential from the dashboard: [sign up](https://newtonrouter.com/register) and create an API key — creating the key costs nothing. Credit is a separate step: your first top-up of $1 puts $5 of credit in your account. Then point any client at the gateway with that key. The code change is still just a base-URL swap.
 
 The real work is not the code change. It is recreating your provider preferences, spend limits, and fallback rules, not the code change. Export those from your current setup first. One practical wrinkle: some gateways namespace model names (for example `anthropic/claude-opus` instead of a bare `claude-opus`). Do a quick find-and-replace across your config, then run a handful of live calls to confirm streaming, tool calls, and structured outputs behave before you flip production traffic.
 

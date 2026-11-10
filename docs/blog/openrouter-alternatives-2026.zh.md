@@ -284,7 +284,7 @@ resp = client.chat.completions.create(
 
 对 AI 编程工具，就是环境变量。把 [Cursor](https://newtonrouter.com/blog/point-cursor-at-unified-api) 或 Claude Code 指向新的 base URL 与 Key，每一个模型、每一次工具调用、每一轮智能体运行，都走网关，零代码改动。**n8n**、**Dify**、**LangChain** 与 **Cline** 遵循同一模式：设好 base URL，设好 Key，完事。
 
-从仪表盘拿到凭证：先注册，再创建 API Key——创建 Key 本身不收费。额度是另一步：首次充值付 $1，账户到账 $5 额度。然后用这个 Key 把任意客户端指向网关。代码侧仍然只是换一个 base URL。
+从仪表盘拿到凭证：先[注册](https://newtonrouter.com/register)，再创建 API Key——创建 Key 本身不收费。额度是另一步：首次充值付 $1，账户到账 $5 额度。然后用这个 Key 把任意客户端指向网关。代码侧仍然只是换一个 base URL。
 
 真正的活儿不是改代码。而是重建你的供应商偏好、支出上限与故障转移规则——不是代码改动。先从当前配置里导出这些。一个实际褶皱：有些网关会给模型名加命名空间（比如 `anthropic/claude-opus` 而非裸 `claude-opus`）。在你的配置里做一次快速查找替换，再跑几条真实调用，确认流式、工具调用与结构化输出在翻生产流量前表现正常。
 
