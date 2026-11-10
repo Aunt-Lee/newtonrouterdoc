@@ -111,7 +111,7 @@ This guide compares 10+ gateways side by side so you can pick on evidence instea
 - [Do You Actually Need a Gateway?](#do-you-actually-need-a-gateway)
 - [The 10+ Best OpenRouter Alternatives in 2026](#the-10-best-openrouter-alternatives-in-2026)
 - [How to Choose the Right OpenRouter Alternative](#how-to-choose-the-right-openrouter-alternative)
-- [Migration & Getting Started: It's a Base URL Swap](#migration--getting-started-its-a-base-url-swap)
+- [Migration & Getting Started: It's a Base URL Swap](#migration-getting-started-its-a-base-url-swap)
 - [Three Stories That Explain the Shift](#three-stories-that-explain-the-shift)
 - [Red Flags to Watch](#red-flags-to-watch)
 - [FAQ](#faq)
