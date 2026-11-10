@@ -215,7 +215,7 @@ Its defensible differentiators:
 
 It isn't the broadest catalog, and those discount numbers are self-reported, not audited. But if you want frontier models at a fraction of official price, your team works in more than one language, or you handle data you can't afford to leak, it belongs on your list.
 
-**Ready to test the difference yourself? [Start free — $5 credit, no card →](https://newtonrouter.com/register)** and point one client at the gateway. No code rewrite required.
+**Ready to test the difference yourself? [First top-up: pay $1, get $5 credit →](https://newtonrouter.com/register)** and point one client at the gateway. A $1 step, $5 of calls, stated up front — cheap without the catch, and no code rewrite required.
 
 ### LiteLLM — the open-source standard
 
@@ -284,7 +284,7 @@ resp = client.chat.completions.create(
 
 For AI coding tools, it is environment variables. Point [Cursor](https://newtonrouter.com/blog/point-cursor-at-unified-api) or Claude Code at the new base URL and key, and every model, every tool call, every agent run flows through the gateway with zero code changes. **n8n**, **Dify**, **LangChain**, and **Cline** follow the same pattern: set the base URL, set the key, done.
 
-Grab your credential from the dashboard. The **Get my free API key** button funds a $5 credit with no card required, then point any client at the gateway. The whole setup takes about two minutes.
+Grab your credential from the dashboard: sign up and create an API key — creating the key costs nothing. Credit is a separate step: your first top-up of $1 puts $5 of credit in your account. Then point any client at the gateway with that key. The code change is still just a base-URL swap.
 
 The real work is not the code change. It is recreating your provider preferences, spend limits, and fallback rules, not the code change. Export those from your current setup first. One practical wrinkle: some gateways namespace model names (for example `anthropic/claude-opus` instead of a bare `claude-opus`). Do a quick find-and-replace across your config, then run a handful of live calls to confirm streaming, tool calls, and structured outputs behave before you flip production traffic.
 
@@ -340,4 +340,4 @@ OpenRouter earned its lead, and the Stripe deal doesn't change that. But "market
 
 Start by answering the five questions above. Then run your top 10 real prompts through two or three shortlisted gateways, log input tokens, output tokens, latency, and cost, and compare against your current setup. The migration itself is a base URL swap. The thinking is the work.
 
-If you want frontier models at a fraction of official price, without silent degradation, with zero retention, and on a seven-language dashboard, **[Start free — $5 credit, no card →](https://newtonrouter.com/register)**. Point one client at `https://newtonrouter.com/v1`, keep your existing SDK, and see the difference a transparent gateway makes. Your future on-call self will thank you.
+If you want frontier models at a fraction of official price, without silent degradation, with zero retention, and on a seven-language dashboard, **[Pay $1, get $5 credit →](https://newtonrouter.com/register)**. Point one client at `https://newtonrouter.com/v1`, keep your existing SDK, and see the difference a transparent gateway makes. Your future on-call self will thank you.
