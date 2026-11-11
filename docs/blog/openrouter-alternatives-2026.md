@@ -40,7 +40,7 @@ date: 2026-11-10
           "name": "What is the cheapest OpenRouter alternative?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Going direct to a provider is technically cheapest, with no platform fee at all. Among gateways, reseller-aggregators price below official list on many models: APIVAI claims 56-86% savings, Crouter advertises ~75% off, and KissAPI offers 5x top-up credit. NewtonRouter states up to roughly 90% below official on some models. The biggest saving usually comes from picking a cheaper provider for the same open model, not from a fee alone. Validate on your real prompts."
+            "text": "Going direct to a provider is technically cheapest, with no platform fee at all. Among gateways, reseller-aggregators price below official list on many models: APIVAI claims 56-86% savings, Crouter advertises ~75% off, and KissAPI offers 5x top-up credit. NewtonRouter offers a $1 first top-up for $5 credit and a seven-language interface. The biggest saving usually comes from picking a cheaper provider for the same open model, not from a fee alone. Validate on your real prompts."
           }
         },
         {
@@ -48,7 +48,7 @@ date: 2026-11-10
           "name": "Does OpenRouter mark up token prices?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. OpenRouter charges no markup on token prices; its per-token rates match each provider's list price. It earns a 5.5% fee on credit-card purchases (5% on crypto, $0.80 minimum) and a 5% fee on BYOK traffic above a monthly free allowance. Going direct is therefore at least 5.5% cheaper on the same usage, before any aggregator discount."
+            "text": "No. OpenRouter charges no markup on token prices; its per-token rates match each provider's list price. It earns a 5.5% fee (Standard plan) on credit-card purchases (5% on crypto, $0.80 minimum) and a 5% fee on BYOK traffic above a $25,000 monthly free allowance. Going direct is therefore at least 5.5% cheaper on the same usage, before any aggregator discount."
           }
         },
         {
@@ -93,7 +93,7 @@ date: 2026-11-10
 
 *By NewtonRouter Team · Published November 10, 2026 · Last verified November 10, 2026*
 
-On August 19, 2026, [Stripe announced it would acquire OpenRouter](https://stripe.com/jp/newsroom/news/stripe-agrees-to-acquire-openrouter), the gateway routing 400+ AI models for more than 10 million developers. If you are now searching for an **OpenRouter alternative**, you are in good company. The deal set off a wave of "OpenRouter migration" queries as teams re-examine where their AI traffic, keys, and invoices live.
+On August 19, 2026, [Stripe announced it would acquire OpenRouter](https://stripe.com/jp/newsroom/news/stripe-agrees-to-acquire-openrouter), the gateway routing 600+ AI models for more than 10 million developers. If you are now searching for an **OpenRouter alternative**, you are in good company. The deal set off a wave of "OpenRouter migration" queries as teams re-examine where their AI traffic, keys, and invoices live.
 
 But migration anxiety is only half the story. For over a year, developers have complained about a failure mode no dashboard shows: **silent model degradation**. A request tagged for a flagship model gets quietly served by a cheaper stand-in, response quality dips, and nobody can prove it happened. That trust gap is the real reason many teams go shopping for an OpenRouter replacement.
 
@@ -101,10 +101,10 @@ This guide compares 10+ gateways side by side so you can pick on evidence instea
 
 > **Key Takeaways**
 > - An **LLM API gateway** collapses many provider SDKs, keys, and bills into one OpenAI-compatible endpoint. Most migrations are just a base-URL swap.
-> - OpenRouter remains the catalog leader (400+ models, 70+ providers) but charges a [5.5% fee on credit purchases](https://openrouter.ai/pricing) and offers no self-hosting or HIPAA coverage.
+> - OpenRouter remains the catalog leader (600+ models, 80+ providers on Standard) but charges a [5.5% Standard-plan fee on credit purchases](https://openrouter.ai/pricing) and offers no self-hosting or HIPAA coverage.
 > - The strongest **OpenRouter alternatives** split into two camps: open-source self-hosted (LiteLLM) and managed aggregators (NewtonRouter, Requesty, NanoGPT, Crouter, KissAPI, APIVAI, Atlas).
 > - **Stability, privacy, and price** are the new battlegrounds: look for no-silent-degradation routing, zero-retention logging, and rates well below official list if cost is your priority.
-> - **NewtonRouter bundles all three**: 7-language UI, zero-retention architecture, and rates up to ~90% below official on some models — cheap without the usual catch. Worth a look against the incumbents.
+> - **NewtonRouter bundles all three**: a 7-language UI, zero-retention architecture, and no silent degradation. Worth a look against the incumbents.
 
 ### In this guide
 - [What Is an LLM API Gateway?](#what-is-an-llm-api-gateway)
@@ -157,7 +157,9 @@ Ask yourself five questions:
 
 If you answered "yes" to two or more, a gateway is worth it. If you are prototyping on a single model at low volume, stay direct and revisit this in a quarter.
 
-Before you compare vendors, it helps to see live price deltas across providers. **[View per-token pricing →](https://newtonrouter.com/pricing)** to ground your decision in current numbers rather than marketing.
+Before you compare vendors, **[View per-token pricing →](https://newtonrouter.com/pricing)** to see what each plan covers.
+
+For a deeper look, [compare OpenRouter alternatives](llm-api-pricing-comparison-2026.md) across providers and models.
 
 ## The 10+ Best OpenRouter Alternatives in 2026
 
@@ -167,15 +169,15 @@ Below is the head-to-head, split into two narrow tables so every column stays re
 
 | Gateway | Pricing | Model coverage | Best for |
 |---|---|---|---|
-| **OpenRouter** | 5.5% fee on credit buys; provider list price | 400+ / 70+ | Broadest catalog, zero ops |
-| **NewtonRouter** | Tiered plans + pay-per-use; up to ~90% below official list | GPT / Claude / Grok / Gemini | Multi-lang teams, stability, privacy, low cost |
+| **OpenRouter** | 5.5% fee (Standard) on credit buys; provider list price | 600+ / 80+ | Broadest catalog, zero ops |
+| **NewtonRouter** | First top-up: $1 for $5 credit | GPT / Claude / Grok / Gemini | Multi-lang teams, stability, privacy, low cost |
 | **[LiteLLM](https://github.com/BerriAI/litellm)** | OSS free; Enterprise paid | 100+ providers | Self-hosting, max control |
 | **Portkey** | $49/mo + $9 per 100k logs | 1600+ / 250+ | Compliance, enterprise |
 | **Requesty** | 5% markup on model cost (0% BYOK) | 600+ / 30+ | Production, EU sovereignty |
 | **Crouter** | Pay-per-token, ~75% off official, no free tier | Claude / GPT / Gemini | Coding agents |
 | **NanoGPT** | No markup on text; $12/mo PRO | 634 text + multimodal | Multimodal, anonymous use |
 | **APIVAI** | Pay-as-you-go; ~56–86% off; min $10 | 20 (12 Claude, 8 GPT) | Cost-focused Claude/GPT |
-| **KissAPI** | 5× top-up credit; free $1 trial | Claude, GPT-5, Gemini | Global devs, no VPN |
+| **KissAPI** | 5× top-up ($5→$25 and up); free $1 trial | Claude, GPT-5, Gemini | Global devs, no VPN |
 | **Atlas** | Aggregator, card; multimodal focus | Image / video heavy | Multimodal media |
 
 ### Under the hood: stability, privacy and deployment
@@ -197,9 +199,9 @@ Below is the head-to-head, split into two narrow tables so every column stays re
 
 ### OpenRouter — the incumbent, judged fairly
 
-OpenRouter earned its category lead. One key reaches 400+ models across 70+ providers, with zero infrastructure to manage and automatic fallback when a model degrades. Inference passes through at each provider's list price. [OpenRouter](https://openrouter.ai/pricing) makes its money on a 5.5% fee when you buy credits (5% on crypto, $0.80 minimum), plus 5% on bring-your-own-key traffic above a free monthly allowance. It is SOC 2 compliant, GDPR compatible, and offers zero-data-retention routing with EU region locking.
+OpenRouter earned its category lead. One key reaches 600+ models across 80+ providers, with zero infrastructure to manage and automatic fallback when a model degrades. Inference passes through at each provider's list price. [OpenRouter](https://openrouter.ai/pricing) makes its money on a 5.5% fee (Standard plan) when you buy credits (5% on crypto, $0.80 minimum), plus 5% on bring-your-own-key traffic above a free monthly allowance. It is SOC 2 compliant, GDPR compatible, and offers zero-data-retention routing with EU region locking.
 
-The trade-offs are structural, not moral. There is no [self-hosting option](https://newtonrouter.com/blog/self-hosted-vs-managed) (a compliance blocker for some), no HIPAA coverage, and the 5.5% fee is real money at scale. If you are prototyping, it is hard to beat. If you need in-VPC deployment, production governance, or you simply object to the fee, the alternatives below get interesting.
+The trade-offs are structural, not moral. There is no [self-hosting option](https://newtonrouter.com/blog/self-hosted-vs-managed) (a compliance blocker for some), no HIPAA coverage, and the 5.5% (Standard) fee is real money at scale. If you are prototyping, it is hard to beat. If you need in-VPC deployment, production governance, or you simply object to the fee, the alternatives below get interesting.
 
 ### Why consider NewtonRouter
 
@@ -207,13 +209,13 @@ NewtonRouter is a managed, OpenAI-compatible gateway built on one promise: the m
 
 Its defensible differentiators:
 
-- **Cheap, without the usual catch.** Per its pricing page, rates run up to roughly 90% below official provider list on some models, across tiered plans plus pay-per-use. Plenty of resellers promise bigger discounts, but many quietly swap in a cheaper model to hit the price. NewtonRouter's first-tier channels mean you pay less and still get the exact model you asked for. The savings come from volume negotiation, not corner-cutting.
+- **Honest model access.** Many resellers promise bigger discounts but quietly swap in a cheaper model to hit the price. NewtonRouter's first-tier channels mean you get the exact model you asked for; its rates come from volume negotiation with providers, not from cutting corners on quality.
 - **No silent downgrades.** Traffic runs through first-tier channels. Some aggregators quietly swap in a cheaper model and still bill it as the flagship. Or so their customers allege. NewtonRouter doesn't. Ask for Claude, you get Claude.
 - **Zero retention.** It stores neither your prompts nor your completions. Among managed gateways that is unusual, and it matters for healthcare, finance, and HR workloads. See how [zero-retention logging](https://newtonrouter.com/docs) works.
 - **Seven languages.** Simplified Chinese, Traditional Chinese, English, French, Japanese, Russian, and Vietnamese, a spread no major competitor matches.
 - **You can see everything.** Live pricing, group availability, and historical success rates sit in the dashboard, so uptime and cost never go dark.
 
-It isn't the broadest catalog, and those discount numbers are self-reported, not audited. But if you want frontier models at a fraction of official price, your team works in more than one language, or you handle data you can't afford to leak, it belongs on your list.
+It isn't the broadest catalog, and those discount numbers are self-reported, not audited. But if you want frontier models, your team works in more than one language, or you handle data you can't afford to leak, it belongs on your list.
 
 **Ready to test the difference yourself? [First top-up: pay $1, get $5 credit →](https://newtonrouter.com/register)** and point one client at the gateway. A $1 step, $5 of calls, stated up front — cheap without the catch, and no code rewrite required.
 
@@ -236,7 +238,7 @@ These gateways compete on price and convenience rather than catalog breadth:
 - **Crouter** puts Claude, GPT, and Gemini behind one OpenAI- and Anthropic-compatible endpoint, with per-key spend limits and auto failover. It advertises ~75% off official rates (as the vendor reports) and has no free plan.
 - **NanoGPT** bills text at list price with no markup and no deposit fee, adds a $12/month PRO tier, and covers image, video, and audio too. Accounts are optional and history stays in your browser.
 - **APIVAI** focuses on Claude and GPT (20 models), supports both OpenAI and Anthropic formats, claims 56–86% savings versus official pricing, and ships a 5-language UI with no KYC.
-- **KissAPI** offers 5× top-up credit (pay $1, get $5), a free $1 trial, and Claude/GPT/Gemini access with 99.5% uptime and no VPN required.
+- **KissAPI** offers 5× top-up credit (from $5 to $25), a free $1 trial, and Claude/GPT/Gemini access with 99.5% uptime and no VPN required.
 - **Atlas** leans multimodal, aggregating image and video models like Grok Imagine, Kling, and Vidu behind one OpenAI-compatible key.
 
 The discount numbers above are self-reported and depend on model and tier. Validate against your real workload before committing production traffic.
@@ -259,9 +261,11 @@ Agent loops are where gateways earn their fee. You need per-key spend caps, fast
 
 ### If controlling cost is the whole point
 
-Going direct to a provider is technically cheapest, but you lose the unified API. The next best move is a reseller-aggregator: **APIVAI**, **Crouter**, **KissAPI**, or **NewtonRouter** all price below official list on many models. Compare effective rates on your top 10 prompts, not on a homepage card.
+Going direct to a provider is technically cheapest, but you lose the unified API. The next best move is a reseller-aggregator: **APIVAI**, **Crouter**, or **KissAPI** all price below official list on many models. Compare effective rates on your top 10 prompts, not on a homepage card.
 
-When you have narrowed the field, **[See plans →](https://newtonrouter.com/plans)** to see which tier matches your monthly volume before you migrate.
+Not sure [which gateways are actually in the running](llm-api-pricing-comparison-2026.md)? Our breakdown compares effective rates model by model.
+
+When you have narrowed the field, **[See plans →](https://newtonrouter.com/plans)** to review the available options before you migrate.
 
 ## Migration & Getting Started: It's a Base URL Swap
 
@@ -304,7 +308,9 @@ Anyone can find a gateway. Few check whether it'll still be standing in six mont
 
 **Vague uptime and no logged model identity.** If a gateway cannot tell you which model actually served a request, you cannot audit quality or catch silent downgrades. Insist on per-request model and provider metadata, not just a green status dot.
 
-**Discounts with no methodology.** Claims like "75% off official" or "up to 90% below list" mean little without the model, tier, and date attached. The best OpenRouter alternatives publish live rate cards you can check against provider price pages whenever you like.
+**Discounts with no methodology.** Claims like "75% off official" or "up to X% below list" mean little without the model, tier, and date attached. The best OpenRouter alternatives publish live rate cards you can check against provider price pages whenever you like.
+
+Our [OpenRouter alternatives roundup](llm-api-pricing-comparison-2026.md) lists the model, tier, and date behind each rate.
 
 **No stated retention policy.** If a vendor will not clearly say whether it stores prompts or completions, assume the worst for sensitive data. Zero retention should be a documented architecture, not a marketing adjective bolted onto the homepage.
 
@@ -317,10 +323,10 @@ These checks take ten minutes and prevent a painful second migration six months 
 ## FAQ
 
 **What is the cheapest OpenRouter alternative?**
-Going direct to a provider is technically cheapest, with no platform fee at all. Among gateways, reseller-aggregators price below official list on many models: APIVAI claims 56–86% savings, Crouter advertises ~75% off, and KissAPI offers 5× top-up credit. NewtonRouter states up to roughly 90% below official on some models. The biggest saving usually comes from picking a cheaper provider for the same open model, not from a fee alone. Validate on your real prompts.
+Going direct to a provider is technically cheapest, with no platform fee at all. Among gateways, reseller-aggregators price below official list on many models: APIVAI claims 56–86% savings, Crouter advertises ~75% off, and KissAPI offers 5× top-up credit. NewtonRouter offers a $1 first-top-up for $5 credit and a seven-language interface. The biggest saving usually comes from picking a cheaper provider for the same open model, not from a fee alone. Validate on your real prompts.
 
 **Does OpenRouter mark up token prices?**
-No. OpenRouter charges no markup on token prices; its per-token rates match each provider's list price. It earns a 5.5% fee on credit-card purchases (5% on crypto, $0.80 minimum) and a 5% fee on BYOK traffic above a monthly free allowance. Going direct is therefore at least 5.5% cheaper on the same usage, before any aggregator discount.
+No. OpenRouter charges no markup on token prices; its per-token rates match each provider's list price. It earns a 5.5% fee (Standard plan) on credit-card purchases (5% on crypto, $0.80 minimum) and a 5% fee on BYOK traffic above a $25,000 monthly free allowance. Going direct is therefore at least 5.5% cheaper on the same usage, before any aggregator discount.
 
 **Is migrating off OpenRouter hard?**
 Usually minutes. Every gateway here exposes an OpenAI-compatible endpoint, so the change is a base URL and API key swap, plus occasionally a model-name prefix. The real work is recreating your provider preferences, spend limits, and fallback rules, not the code change.
@@ -336,8 +342,8 @@ Yes. LiteLLM is the most widely adopted, a free, open-source Python proxy to 100
 
 ## Conclusion: Pick on Evidence, Migrate in Minutes
 
-OpenRouter earned its lead, and the Stripe deal doesn't change that. But "market leader" and "right for you" are two different questions. If you need self-hosting, EU sovereignty, zero retention, multi-language support, or simply refuse to pay a 5.5% fee at scale, the field of **OpenRouter alternatives** in 2026 is deeper and more capable than ever.
+OpenRouter earned its lead, and the Stripe deal doesn't change that. But "market leader" and "right for you" are two different questions. If you need self-hosting, EU sovereignty, zero retention, multi-language support, or simply refuse to pay a 5.5% (Standard) fee at scale, the field of **OpenRouter alternatives** in 2026 is deeper and more capable than ever.
 
 Start by answering the five questions above. Then run your top 10 real prompts through two or three shortlisted gateways, log input tokens, output tokens, latency, and cost, and compare against your current setup. The migration itself is a base URL swap. The thinking is the work.
 
-If you want frontier models at a fraction of official price, without silent degradation, with zero retention, and on a seven-language dashboard, **[Pay $1, get $5 credit →](https://newtonrouter.com/register)**. Point one client at `https://newtonrouter.com/v1`, keep your existing SDK, and see the difference a transparent gateway makes. Your future on-call self will thank you.
+If you want frontier models, without silent degradation, with zero retention, and on a seven-language dashboard, **[Pay $1, get $5 credit →](https://newtonrouter.com/register)**. Point one client at `https://newtonrouter.com/v1`, keep your existing SDK, and see the difference a transparent gateway makes. Your future on-call self will thank you.
