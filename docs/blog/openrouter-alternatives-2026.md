@@ -247,6 +247,8 @@ The discount numbers above are self-reported and depend on model and tier. Valid
 
 There is no single best OpenRouter alternative. The right one depends on who you are. A gateway that delights a solo hacker can bankrupt a high-volume startup, and vice versa. Match the tool to who you are and what you run, then validate on real traffic.
 
+Choosing the gateway is one axis; [which model for each task](llm-model-selection-2026.md) is the other - our model-selection guide maps workloads to entry, mid, and flagship tiers before you commit budget.
+
 ### If you are an individual developer
 
 You want the lowest friction and the lowest floor. **NanoGPT** (start at $0.10, no account needed) or **KissAPI** (free $1 trial, 5× credit) let you experiment without a commitment. **NewtonRouter** fits if you value stability and a clean multi-language dashboard. Skip self-hosting. Your time is better spent building.

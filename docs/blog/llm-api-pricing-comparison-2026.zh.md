@@ -31,7 +31,7 @@ date: 2026-11-10
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "博客", "item": "https://newtonrouter.com/zh/blog" },
-        { "@type": "ListItem", "position": 2, "name": "2026 LLM API 价格对比", "item": "https://newtonrouter.com/zh/blog/llm-api-pricing-comparison" }
+        { "@type": "ListItem", "position": 2, "name": "LLM API 价格对比 2026", "item": "https://newtonrouter.com/zh/blog/llm-api-pricing-comparison" }
       ]
     },
     {
@@ -144,6 +144,8 @@ Elena 是一家 12 人 SaaS 公司的后端工程师，她为客服机器人按�
 ### 1.2 如何读这张表
 
 三条规则让数字保持诚实。**第一**，把输入与输出当作两个独立的价格来读；在真实发票上它们从来不是一个混合数字。**第二**，记下档位与上下文阈值：Claude Haiku 5.5 在超过 10 万 token 的提示时从 `$0.10/$0.50` 跳到 `$0.50/$2.50`，grok-4.6 在 20 万 token 处大致翻倍。**第三**，任何促销价都带着截止日。一个带着到期日的费率，不是稳定的官方标价。
+
+档位这一列还引出了这张表回答不了的问题：哪个工作负载该上哪一档。那是另一门功课——[如何把任务路由到合适的模型](llm-model-selection-2026.md) 一文与这份价格表配套作答。
 
 这张表只展示了**官方标价**，也就是三个数字里的第一个。第二个是网关的挂牌价，第三个是你实际支付的金额。这个区别正是[第 4 节](#官方标价-vs-网关到手价缺口从何而来)的主题。它的形状是这样的：
 

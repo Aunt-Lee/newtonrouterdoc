@@ -145,6 +145,8 @@ Start with the answer most readers came for. This is a **quick-answer official l
 
 Three rules keep the numbers honest. **First**, read input and output as two separate prices; they are never a single blended figure on a real invoice. **Second**, note the tier and context threshold: Claude Haiku 5.5 moves from `$0.10/$0.50` to `$0.50/$2.50` above 100K-token prompts, and grok-4.6 roughly doubles at 200K tokens. **Third**, treat any promotional price as time-boxed. A rate with an expiry date is not a stable official list price.
 
+The tier column also raises a question this table cannot answer: which workload belongs on which tier. The answer is its own discipline - [how to route tasks to the right model](llm-model-selection-2026.md) is the model-selection guide that pairs with this price comparison.
+
 The table shows only the **official list price**, the first of three numbers. The second is what a gateway lists, the third is what you actually pay. That distinction is the subject of [section 4](#official-list-price-vs-gateway-take-home-price-where-the-gap-comes-from). Here is its shape:
 
 | The number | Where it comes from | Worked 2026-11-10 example |

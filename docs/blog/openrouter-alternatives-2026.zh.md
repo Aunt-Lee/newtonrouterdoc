@@ -28,7 +28,7 @@ date: 2026-11-10
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Blog", "item": "https://newtonrouter.com/zh/blog" },
+        { "@type": "ListItem", "position": 1, "name": "博客", "item": "https://newtonrouter.com/zh/blog" },
         { "@type": "ListItem", "position": 2, "name": "OpenRouter 替代品", "item": "https://newtonrouter.com/zh/blog/openrouter-alternatives" }
       ]
     },
@@ -246,6 +246,8 @@ Requesty 在 30+ 供应商间路由 600+ 模型，统一加价 5%（自带 Key 0
 ## 如何选对适合你的 OpenRouter 替代品
 
 没有唯一最好的 OpenRouter 替代品。对的那个取决于你是谁。让独立黑客如鱼得水的网关，可能拖垮高流量创业公司，反之亦然。把工具匹配到你是谁、你跑什么，然后在真实流量上验证。
+
+选网关是一个维度，[每个任务该用哪个模型](llm-model-selection-2026.md) 是另一个：我们的选型指南把工作负载映射到入门、中档、旗舰三档，再谈预算。
 
 ### 如果你是独立开发者
 
