@@ -23,13 +23,13 @@ date: 2026-11-10
       },
       "datePublished": "2026-11-10",
       "dateModified": "2026-11-10",
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://newtonrouter.com/blog/openrouter-alternatives" }
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://newtonrouter.com/zh/blog/openrouter-alternatives" }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Blog", "item": "https://newtonrouter.com/blog" },
-        { "@type": "ListItem", "position": 2, "name": "OpenRouter 替代品", "item": "https://newtonrouter.com/blog/openrouter-alternatives" }
+        { "@type": "ListItem", "position": 1, "name": "Blog", "item": "https://newtonrouter.com/zh/blog" },
+        { "@type": "ListItem", "position": 2, "name": "OpenRouter 替代品", "item": "https://newtonrouter.com/zh/blog/openrouter-alternatives" }
       ]
     },
     {
