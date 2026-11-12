@@ -40,7 +40,7 @@ date: 2026-11-10
           "name": "最便宜的 OpenRouter 替代品是什么？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "直连供应商在技术上最便宜，完全没有平台费。在网关里，转售聚合器在很多模型上定价低于官方：APIVAI 声称省 56–86%，Crouter 宣传约官方 7.5 折，KissAPI 提供 5 倍充值额度。NewtonRouter 提供 $1 首充得 $5 额度及 7 语言界面。最大的节省通常来自为同一开源模型挑更便宜的供应商，而非仅仅免去一笔手续费。用你真实的提示去验证。"
+            "text": "直连供应商在技术上最便宜，完全没有平台费。在网关里，转售聚合器在很多模型上定价低于官方：APIVAI 声称省 56–86%，Crouter 宣传约官方 7.5 折，KissAPI 提供 5 倍充值额度。NewtonRouter 提供 7 语言界面。最大的节省通常来自为同一开源模型挑更便宜的供应商，而非仅仅免去一笔手续费。用你真实的提示去验证。"
           }
         },
         {
@@ -170,7 +170,7 @@ flowchart LR
 | 网关 | 计费模式 | 模型覆盖 | 最适合 |
 |---|---|---|---|
 | **OpenRouter** | Standard 档充值收 5.5% 手续费；按供应商标价透传 | 600+ / 80+ | 目录最全，零运维 |
-| **NewtonRouter** | 首次充值：$1 换 $5 额度 | GPT / Claude / Grok / Gemini | 多语言、稳定、隐私、低成本 |
+| **NewtonRouter** | 零留存、不静默降级 | GPT / Claude / Grok / Gemini | 多语言、稳定、隐私、低成本 |
 | **[LiteLLM](https://github.com/BerriAI/litellm)** | 开源免费；企业版付费 | 100+ 供应商 | 自托管，最大化控制 |
 | **Portkey** | $49/月起 + 每 10 万日志 $9 | 1600+ / 250+ | 合规、企业治理 |
 | **Requesty** | 模型成本加价 5%（自带 Key 0%） | 600+ / 30+ | 生产环境、EU 数据主权 |
@@ -217,7 +217,7 @@ NewtonRouter 是一个托管的、OpenAI 兼容的**大模型网关**，建立�
 
 它不是目录最全的，那些折扣数字也是自报、未经审计的。但如果你想要前沿模型、你的团队用不止一种语言工作，或者你处理着漏不起的数据，它理应出现在你的清单上。
 
-**想亲自验证差别？[首次充值付 $1，到账 $5 额度 →](https://newtonrouter.com/register)** 把一个客户端指向网关即可。一块钱的门槛、$5 的额度，规则摆在明面上：便宜且不掉坑，无需重写代码。
+**想亲自验证差别？[创建我的 API Key →](https://newtonrouter.com/register)** 把一个客户端指向网关即可。无需重写代码。
 
 ### LiteLLM — 开源标准
 
@@ -290,7 +290,7 @@ resp = client.chat.completions.create(
 
 对 AI 编程工具，就是环境变量。把 [Cursor](https://newtonrouter.com/blog/point-cursor-at-unified-api) 或 Claude Code 指向新的 base URL 与 Key，每一个模型、每一次工具调用、每一轮智能体运行，都走网关，零代码改动。**n8n**、**Dify**、**LangChain** 与 **Cline** 遵循同一模式：设好 base URL，设好 Key，完事。
 
-从仪表盘拿到凭证：先[注册](https://newtonrouter.com/register)，再创建 API Key——创建 Key 本身不收费。额度是另一步：首次充值付 $1，账户到账 $5 额度。然后用这个 Key 把任意客户端指向网关。代码侧仍然只是换一个 base URL。
+从仪表盘拿到凭证：先[注册](https://newtonrouter.com/register)，再创建 API Key——创建 Key 本身不收费。然后用这个 Key 把任意客户端指向网关。代码侧仍然只是换一个 base URL。
 
 真正的活儿不是改代码。而是重建你的供应商偏好、支出上限与故障转移规则——不是代码改动。先从当前配置里导出这些。一个实际褶皱：有些网关会给模型名加命名空间（比如 `anthropic/claude-opus` 而非裸 `claude-opus`）。在你的配置里做一次快速查找替换，再跑几条真实调用，确认流式、工具调用与结构化输出在翻生产流量前表现正常。
 
@@ -325,7 +325,7 @@ resp = client.chat.completions.create(
 ## 常见问题
 
 **最便宜的 OpenRouter 替代品是什么？**
-直连供应商在技术上最便宜，完全没有平台费。在网关里，转售聚合器在很多模型上定价低于官方：APIVAI 声称省 56–86%，Crouter 宣传约官方 7.5 折，KissAPI 提供 5 倍充值额度。NewtonRouter 提供 $1 首充得 $5 额度及 7 语言界面。最大的节省通常来自为同一开源模型挑更便宜的供应商，而非仅仅免去一笔手续费。用你真实的提示去验证。
+直连供应商在技术上最便宜，完全没有平台费。在网关里，转售聚合器在很多模型上定价低于官方：APIVAI 声称省 56–86%，Crouter 宣传约官方 7.5 折，KissAPI 提供 5 倍充值额度。NewtonRouter 提供 7 语言界面。最大的节省通常来自为同一开源模型挑更便宜的供应商，而非仅仅免去一笔手续费。用你真实的提示去验证。
 
 **OpenRouter 会在 token 价格上加价吗？**
 不会。OpenRouter 对 token 价格不加价，其每 token 费率与各供应商标价一致。它从信用卡充值收 5.5%（Standard 档）手续费（加密货币 5%，最低 $0.80），并对超出每月 $25,000 免费额度的自带 Key 流量收 5%。因此同样用量下，直连至少便宜 5.5%，还没算任何聚合折扣。
@@ -348,4 +348,4 @@ OpenRouter 配得上它的领先，Stripe 的交易也改变不了这点。但"�
 
 先从回答上面的五个问题开始。然后把你的常用 10 条真实提示，跑过两三家入围网关，记录输入 token、输出 token、延迟与成本，和当前配置对比。迁移本身只是换一个 base URL。思考才是真正的活儿。
 
-如果你想要前沿模型、不降级、零留存、还在一个 7 语言仪表盘上，**[付 $1，得 $5 额度 →](https://newtonrouter.com/register)**。把一个客户端指向 `https://newtonrouter.com/v1`，保留你现有的 SDK，看看一个透明网关能带来什么不同。你未来的 on-call 版本会感谢你。
+如果你想要前沿模型、不降级、零留存、还在一个 7 语言仪表盘上，**[创建我的 API Key →](https://newtonrouter.com/register)**。把一个客户端指向 `https://newtonrouter.com/v1`，保留你现有的 SDK，看看一个透明网关能带来什么不同。你未来的 on-call 版本会感谢你。

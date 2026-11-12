@@ -263,4 +263,4 @@ The meta-skill here is keeping re-evaluation cheap. Model lineups will rotate, p
 
 **Next steps:** once your tiers are explicit and logged, the remaining axis is cost discipline - [how to compare prices fairly](llm-api-pricing-comparison-2026.md) is the seven-check worksheet behind every rate cited in this guide.
 
-Ready to route each task to its tier and log the exact model behind every request? **[First top-up: pay $1, get $5 credit →](https://newtonrouter.com/register)** Keep your SDK, change two strings, and rerun your twenty prompts tonight. The tier map you build on your own traffic will beat any guide, including this one.
+Ready to route each task to its tier and log the exact model behind every request? **[Create your API key →](https://newtonrouter.com/register)** Keep your SDK, change two strings, and rerun your twenty prompts tonight. The tier map you build on your own traffic will beat any guide, including this one.

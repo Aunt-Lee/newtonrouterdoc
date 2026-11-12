@@ -341,4 +341,4 @@ Path A 是官方标价的算术。Path B 加上了 Standard 充值上一项已�
 
 **下一步：** 价格只是其中一个维度。当你准备好把模型广度、稳定性、留存政策与语言支持，和成本一起权衡时，可以读[OpenRouter 替代品汇总](openrouter-alternatives-2026.md)，看完整的网关对比。
 
-想用自己的真实流量验证这套算法、并在每一次请求中记录确切调用的模型？**[首次充值付 $1，到账 $5 额度 →](https://newtonrouter.com/register)** 把客户端指向 `https://newtonrouter.com/v1`，保留你现有的 SDK，拿你今天实际支付的成本来给最常用的十个提示词重新算一笔账。你未来的预算复盘会感谢现在的你。
+想用自己的真实流量验证这套算法、并在每一次请求中记录确切调用的模型？**[创建我的 API Key →](https://newtonrouter.com/register)** 把客户端指向 `https://newtonrouter.com/v1`，保留你现有的 SDK，拿你今天实际支付的成本来给最常用的十个提示词重新算一笔账。你未来的预算复盘会感谢现在的你。

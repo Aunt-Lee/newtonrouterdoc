@@ -42,7 +42,7 @@ date: 2026-11-10
           "name": "How much does an LLM API cost per 1 million tokens in 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "There is no single price. As of 2026-11-10, official list rates per 1M tokens run from GPT-6 Luna $0.10/$0.50 up to GPT-6 Astra $10.00/$50.00 (openai.com/api/). A third-party tracker puts the blended range across hundreds of models at $0.02-$285.00 per 1M (tokenando.ai, October 2026), a landscape estimate, not an official rate. Output tokens usually cost several times more than input, so read both columns. Rates change; verify on the provider's pricing page before committing budget."
+            "text": "There is no single price. As of 2026-11-10, official list rates per 1M tokens run from GPT-6 Luna $0.10/$0.50 up to GPT-6 Astra $10.00/$50.00 (openai.com/api/). A third-party tracker puts the blended range across hundreds of models at $0.02–$285.00 per 1M (tokenando.ai, October 2026), a landscape estimate, not an official rate. Output tokens usually cost several times more than input, so read both columns. Rates change; verify on the provider's pricing page before committing budget."
           }
         },
         {
@@ -58,7 +58,7 @@ date: 2026-11-10
           "name": "How is LLM API cost calculated?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cost = (input / 1M x input rate) + (output / 1M x output rate). Then add cached-input tokens at their own lower rate, apply batch or long-context adjustments, and layer on platform fees, tool charges, and retries. Divide the total by total token volume for your effective rate per million tokens (tokenmath.net, moneydeck.io). A homepage percentage is no substitute for this arithmetic."
+            "text": "Cost = (input ÷ 1M × input rate) + (output ÷ 1M × output rate). Then add cached-input tokens at their own lower rate, apply batch or long-context adjustments, and layer on platform fees, tool charges, and retries. Divide the total by total token volume for your effective rate per million tokens (tokenmath.net, moneydeck.io). A homepage percentage is no substitute for this arithmetic."
           }
         },
         {
@@ -82,7 +82,7 @@ date: 2026-11-10
           "name": "Can the same model cost different amounts on different gateways?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. A third-party aggregator tracking 235 providers found the same open-weight model priced 13.2x to 31.3x apart across 96-126 hosts (llmpricing.dev, data synced 2026-11-09). The spread comes from channel tiers, volume purchasing, multiple hosts serving open-weight models, promotional windows, and platform fees layered on top. Compare the effective take-home price on your own prompts, not the headline rate."
+            "text": "Yes. A third-party aggregator tracking 235 providers found the same open-weight model priced 13.2× to 31.3× apart across 96–126 hosts (llmpricing.dev, data synced 2026-11-09). The spread comes from channel tiers, volume purchasing, multiple hosts serving open-weight models, promotional windows, and platform fees layered on top. Compare the effective take-home price on your own prompts, not the headline rate."
           }
         }
       ]
@@ -341,4 +341,4 @@ Once you have a number you trust, the rest gets easier. You will know whether a 
 
 **Next steps:** price is one axis. When you are ready to weigh model breadth, stability, retention policy, and language support alongside cost, read [our OpenRouter alternatives roundup](openrouter-alternatives-2026.md) for the full gateway comparison.
 
-Ready to test the arithmetic on your own traffic and log the exact model behind every request? **[First top-up: pay $1, get $5 credit →](https://newtonrouter.com/register)** Point one client at `https://newtonrouter.com/v1`, keep your existing SDK, and price your top ten prompts against what you pay today. Your future budget review will thank you.
+Ready to test the arithmetic on your own traffic and log the exact model behind every request? **[Create your API key →](https://newtonrouter.com/register)** Point one client at `https://newtonrouter.com/v1`, keep your existing SDK, and price your top ten prompts against what you pay today. Your future budget review will thank you.
